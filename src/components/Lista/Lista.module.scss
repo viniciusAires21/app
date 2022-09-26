@@ -1,0 +1,65 @@
+@import "../../style/variaveis";
+
+.box {
+  width: 95%;
+  height: 75%;
+  padding-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $light-gray;
+    border-radius: 20px;
+  }
+
+  &__tarefa {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $light-gray;
+    }
+
+    &-concluida {
+      text-decoration: line-through solid $dark-gray;
+    }
+
+    &-funcoes {
+      width: 10%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      &--delete {
+        cursor: pointer;
+        padding: 0.3em 0.7em;
+        border-radius: 10px;
+        border: none;
+        background-image: url();
+
+        &:hover {
+          background-color: $red;
+          color: $white;
+        }
+      }
+    }
+  }
+}

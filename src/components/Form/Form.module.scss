@@ -1,0 +1,22 @@
+@import "../../style/variaveis";
+
+.form {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.aviso {
+  width: 100%;
+  height: auto;
+  padding: 0.2em 0;
+  background-color: $red;
+  color: $white;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+}
